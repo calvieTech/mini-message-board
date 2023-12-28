@@ -5,8 +5,6 @@ const os = require('os');
 
 /* GET messages home page. */
 messagesRouter.get('/', (req, res, next) => {
-  const hostName = os.hostname();
-  console.log(`hostName: `, hostName);
   res.render('index', {
     title: 'Mini MessageBoard',
     messages: messages,
